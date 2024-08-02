@@ -84,7 +84,7 @@ const Header = () => {
         <header id='header'>
             <div className='header__inner container'>
                 <h1 className='logo'>
-                    <Link to='/'>websloper</Link>
+                    <Link to='/'>Roha Blog</Link>
                 </h1>
 
                 <nav className='nav'>
