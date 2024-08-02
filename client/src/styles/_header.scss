@@ -1,0 +1,159 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--white100);
+
+    .logo {
+        width: 170px;
+
+        a {
+            padding: 5px;
+            margin: 5px;
+            font-family: var(--fontO);
+            font-size: 1.625rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .nav {
+        ul {
+            display: flex;
+
+            li {
+                margin: 3px;
+                border-radius: 5px;
+
+                a {
+                    padding: 10px;
+                    font-size: 14px;
+                    margin: 10px;
+                }
+
+                &.active {
+                    background-color: var(--white200);
+                }
+            }
+        }
+    }
+
+    .utils {
+        width: 170px;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+
+        button {
+            margin: 0 10px;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-size: 100%;
+            transition: background-image .4s;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .search {
+            background-image: var(--searchImg);
+        }
+
+        .dark-mode-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .navBtn {
+            background-image: var(--navImg);
+            display: none;
+        }
+
+        .face {
+            width: 28px;
+            height: 28px;
+            border-radius: 50px;
+            margin-left: 10px;
+            background-image: var(--ContemptFace);
+            background-size: cover;
+            border: 2px solid var(--black200);
+            // display: none;
+        }
+
+        .profile {
+            position: absolute;
+            right: 0;
+            top: 39px;
+            border: 1px solid var(--black700);
+            background-color: var(--white);
+            font-size: 14px;
+            min-width: 250px;
+            z-index: 1000;
+            // display: none;
+
+            ul {
+                padding: 1rem;
+
+                li {
+                    text-align: left;
+
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                            text-underline-position: under;
+                        }
+                    }
+                }
+            }
+
+            ul:first-of-type {
+                background-color: var(--white200);
+
+                .profile-id {
+                    margin-right: 40px;
+                }
+
+                .profile-email {
+                    color: var(--black700);
+                    font-size: 14px;
+                    margin-right: 40px;
+                }
+
+                .profile-logout {
+                    background-image: var(--logoutImg);
+                    background-size: 60%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    position: absolute;
+                    right: 16px;
+                    top: 22px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-color: var(--white400);
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: var(--white500);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 960px) {
+    .header__inner {
+        .nav {
+            display: none;
+        }
+
+        .utils {
+            .navBtn {
+                display: block;
+            }
+        }
+    }
+}

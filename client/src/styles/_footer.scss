@@ -1,0 +1,41 @@
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__links {
+        margin-bottom: 0.5rem;
+    }
+
+    &__link {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #61dafb;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    p {
+        color: #fff;
+    }
+}

@@ -1,0 +1,176 @@
+/* index.css 또는 App.css 파일에 추가 */
+:root {
+    --fontJ: "theJamsil";
+    --fontE: "eduAll";
+    --fontO: "Orbitron";
+    --fontG: "gmarket";
+    --fontN: "nanumSquareNeo";
+
+    --mainBg: #f6f8f9;
+    --pointColor: #8ca9e7;
+    --subColor: #6f95ea;
+    --hoverColor: #a0b7e9;
+    --activeColor: #618ceb;
+    --pointBg: #ededff;
+    --cardBg: #f0f0f0;
+
+    // 다크 모드 색상
+    --mainBg-dark: #1e1e1e;
+    --pointColor-dark: #3a3a3a;
+    --subColor-dark: #282828;
+    --hoverColor-dark: #3c3c3c;
+    --activeColor-dark: #5a5a5a;
+    --cardBg-dark: #252525;
+
+    --black: #000;
+    --black100: #111;
+    --black200: #222;
+    --black300: #333;
+    --black400: #444;
+    --black500: #555;
+    --black600: #666;
+    --black700: #797979;
+
+    --white: #fff;
+    --white100: #f9f9f9;
+    --white200: #eeeeee;
+    --white300: #dfdfdf;
+    --white400: #cfcfcf;
+    --white500: #c0c0c0;
+    --white600: #ccc;
+    --white700: #ddd;
+
+    // 다크 모드 반전 색상
+    --black-dark: #fff;
+    --black100-dark: #eeeeee;
+    --black200-dark: #dddddd;
+    --black300-dark: #cccccc;
+    --black400-dark: #bbbbbb;
+    --black500-dark: #aaaaaa;
+    --black600-dark: #999999;
+    --black700-dark: #666666;
+
+    --white-dark: #000;
+    --white100-dark: #111;
+    --white200-dark: #222;
+    --white300-dark: #333;
+    --white400-dark: #444;
+    --white500-dark: #555;
+    --white600-dark: #666;
+    --white700-dark: #797979;
+
+    body.dark-mode {
+        --mainBg: var(--mainBg-dark);
+        --pointColor: var(--pointColor-dark);
+        --subColor: var(--subColor-dark);
+        --hoverColor: var(--hoverColor-dark);
+        --activeColor: var(--activeColor-dark);
+        --cardBg: var(--cardBg-dark);
+        --black: var(--black-dark);
+        --black100: var(--black100-dark);
+        --black200: var(--black200-dark);
+        --black300: var(--black300-dark);
+        --black400: var(--black400-dark);
+        --black500: var(--black500-dark);
+        --black600: var(--black600-dark);
+        --black700: var(--black700-dark);
+        --white: var(--white-dark);
+        --white100: var(--white100-dark);
+        --white200: var(--white200-dark);
+        --white300: var(--white300-dark);
+        --white400: var(--white400-dark);
+        --white500: var(--white500-dark);
+        --white600: var(--white600-dark);
+        --white700: var(--white700-dark);
+        --textColor: var(--white-dark); // 다크 모드 텍스트 색상
+    }
+
+    body {
+        background-color: var(--mainBg);
+        color: var(--textColor);
+    }
+
+    .some-element {
+        background-color: var(--subColor);
+    }
+
+    .some-element:hover {
+        background-color: var(--hoverColor);
+    }
+
+    .some-active-element {
+        background-color: var(--activeColor);
+    }
+
+    .card {
+        background-color: var(--cardBg);
+    }
+
+    /* SVG 아이콘 색상 */
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* 다크 모드 로그인 아이콘 필터 적용 */
+    body.dark-mode .login-icon {
+        filter: brightness(0) invert(1);
+    }
+
+    // 폰트 셋팅
+    font-family: var(--fontJ);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    // svg 이미지
+    --searchImg: url(../../public/svg/search.svg);
+    --darkImg: url(../../public/svg/dark.svg);
+    --navImg: url(../../public/svg/nav.svg);
+    --logoutImg: url(../../public/svg/logout.svg);
+
+    // face 이미지
+    --AngryFace: url(../../public/face/Angry.svg);
+    --AweFace: url(../../public/face/Awe.svg);
+    --BlankFace: url(../../public/face/Blank.svg);
+    --CalmFace: url(../../public/face/Calm.svg);
+    --CheekyFace: url(../../public/face/Cheeky.svg);
+    --ConcernedFace: url(../../public/face/Concerned.svg);
+    --ConcernedFearFace: url(../../public/face/ConcernedFear.svg);
+    --ContemptFace: url(../../public/face/Contempt.svg);
+    --CuteFace: url(../../public/face/Cute.svg);
+    --CyclopsFace: url(../../public/face/Cyclops.svg);
+    --DefaultFace: url(../../public/face/Default.svg);
+    --DrivenFace: url(../../public/face/Driven.svg);
+    --EatingHappyFace: url(../../public/face/EatingHappy.svg);
+    --ExplainingFace: url(../../public/face/Explaining.svg);
+    --EyesClosedFace: url(../../public/face/EyesClosed.svg);
+    --FearFace: url(../../public/face/Fear.svg);
+    --HecticFace: url(../../public/face/Hectic.svg);
+    --LovingGrin1Face: url(../../public/face/LovingGrin1.svg);
+    --LovingGrin2Face: url(../../public/face/LovingGrin2.svg);
+    --MonsterFace: url(../../public/face/Monster.svg);
+    --OldFace: url(../../public/face/Old.svg);
+    --RageFace: url(../../public/face/Rage.svg);
+    --SeriousFace: url(../../public/face/Serious.svg);
+    --SmileFace: url(../../public/face/Smile.svg);
+    --SmileBigFace: url(../../public/face/SmileBig.svg);
+    --SmileLOLFace: url(../../public/face/SmileLOL.svg);
+    --SmileTeethGapFace: url(../../public/face/SmileTeethGap.svg);
+    --SolemnFace: url(../../public/face/Solemn.svg);
+    --SuspiciousFace: url(../../public/face/Suspicious.svg);
+    --TiredFace: url(../../public/face/Tired.svg);
+    --VeryAngryFace: url(../../public/face/VeryAngry.svg);
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}

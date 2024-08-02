@@ -1,0 +1,224 @@
+.board__inner {
+    padding-top: 100px;
+
+    h3 {
+        padding: 50px 0;
+        font-size: 40px;
+    }
+}
+
+.board__search {
+    display: flex;
+    justify-content: flex-end;
+
+    .search {
+        position: relative;
+
+        input {
+            border: 1px solid var(--white200);
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 300px;
+            outline: none;
+
+            &::placeholder {
+                color: var(--black400);
+                text-transform: uppercase;
+            }
+
+            &:focus {
+                border: 1px solid var(--black);
+            }
+        }
+
+        button {
+            position: absolute;
+            right: 9px;
+            top: 9px;
+            background-image: var(--searchImg);
+            background-size: contain;
+            background-color: var(--white);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .btn {
+        a {
+            background-color: var(--black);
+            color: var(--white);
+            margin-left: 10px;
+            height: 37px;
+            line-height: 37px;
+            display: inline-block;
+            font-size: 14px;
+            padding: 0 20px;
+            vertical-align: 2px;
+        }
+    }
+}
+
+.board__table {
+    table {
+        border-top: 2px solid var(--black);
+
+        tbody {
+            tr {
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: var(--white100);
+                }
+            }
+        }
+
+        th {
+            padding: 0.9rem 0;
+            border-bottom: 1px solid var(--black100);
+            font-weight: normal;
+        }
+
+        td {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--white100);
+            font-size: 14px;
+            text-align: center;
+            color: var(--black300);
+
+            &:nth-child(2) {
+                text-align: left;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.board__page {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+
+    .pageLeft {
+        width: 24px;
+        height: 24px;
+        background-image: var(--arrowLeftImg);
+        background-color: var(--white100);
+        margin-right: 20px;
+        border-radius: 50px;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .pageRight {
+        width: 24px;
+        height: 24px;
+        background-image: var(--arrowRightImg);
+        background-color: var(--white100);
+        margin-left: 20px;
+        border-radius: 50px;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            a {
+                color: var(--white300);
+                padding: 10px;
+
+                &:hover {
+                    color: var(--black300);
+                }
+
+                &.active {
+                    color: var(--black100);
+                }
+            }
+        }
+    }
+}
+
+.board__write {
+    label {
+        display: none;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid var(--white200);
+        padding: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .quill {
+        margin-bottom: 10px;
+
+        .ql-editor {
+            min-height: 500px;
+        }
+    }
+
+    .btn {
+        text-align: right;
+
+        button {
+            background-color: var(--black);
+            padding: 0.7rem 1.3rem;
+            color: var(--white)
+        }
+    }
+
+    .ql-toolbar.ql-snow {
+        border: 1px solid (var(--white200));
+    }
+
+    .ql-container.ql-snow {
+        border: 1px solid (var(--white200));
+    }
+}
+
+.board__view {
+    h4 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .info {
+        text-align: center;
+        margin-top: 5px;
+
+        span {
+            color: var(--black300);
+            font-size: 14px;
+            padding: 0 4px;
+        }
+    }
+
+    .contents {
+        padding: 100px 25%;
+        line-height: 1.8;
+        color: var(--black300);
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn {
+        text-align: center;
+
+        a,
+        button {
+            padding: 0.6rem 1.3rem;
+            background-color: var(--black);
+            margin: 1px;
+            color: var(--white);
+            border-radius: 3px;
+            font-size: 14px;
+        }
+    }
+}
